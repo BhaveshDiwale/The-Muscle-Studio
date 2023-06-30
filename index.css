@@ -263,6 +263,19 @@ input[type="submit"]:hover{
     text-align: center;
 }
 
+@media screen and (min-width:375px) {
+    .banner h3{
+        left: 80px;
+    }
+}
+
+@media screen and (min-width:425px) {
+    .banner h3{
+        left: 100px;
+    }
+}
+
+
 @media screen and (min-width:768px) {
     .navbar{
         height: 60px;
