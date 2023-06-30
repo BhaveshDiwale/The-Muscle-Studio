@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>The Muscle Studio</title>
+</head>
+<body>
+    <div class="container-fluid mainbox">
+        <div class="wrap">
+        <div id="link-group-wrap">
+            <div id="closebtn" onclick="handlerevclick()">
+                <span class="material-symbols-outlined">close</span>
+            </div>
+            <ul class="link-group">
+                <li class="link"><a href="#">Home</a></li>
+                <li class="link"><a href="#serviceId">Services </a></li>
+                <li class="link"><a href="about.html">About Us</a></li>
+                <li class="link"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="container-fluid navbar">
+            <div class="logo-wrap">
+                <h2><a href="#">The Muscle Studio</a></h2>
+            </div>
+            <div class="menu" onclick="handleclick()">
+                <span class="material-symbols-outlined ham">menu</span>
+            </div>
+        </div>
+    </div>
+        <div class="banner">
+            <img src="images/intro.jpg" alt="Intro-img" id="banner-img">
+            <h3>Find your true potential</h3>
+        </div>
+
+        <div class="container about">
+            <h2>Why 'The Muscle Studio'?</h2>
+            <ul>
+                <li>Diverse range of top-quality equipment</li>
+                <li>Experienced personal trainers</li>
+                <li>Group fitness classes</li>
+                <li>Flexible membership options to suit your schedule</li>
+                <li>We understand that everyone has unique aspirations and fitness levels</li>
+
+            </ul>
+        </div>
+        <div class="container services" id="serviceId">
+            <div class="heading-service"><h2>Services</h2></div>
+            
+            <div class="cards">
+            <div class="card weight-train">
+                <img src="images/weight.jpg" alt="weight-train" class="grid-img">
+                <div class="card-name"><h3>Weight Training</h3></div>
+                <div class="overlay">
+                    <div class="text"><a href="#">See plans</a></div>
+                </div>
+
+            </div>
+            <div class="card cardio-train">
+                <img src="images/cardio.jpg" alt="cardio-train" class="grid-img">
+                <div class="card-name"><h3>Cardio Training</h3></div>
+                <div class="overlay">
+                    <div class="text"><a href="#">See plans</a></div>
+                </div>
+
+            </div>
+            <div class="card yoga-train">
+                <img src="images/yoga.jpg" alt="yoga-train" class="grid-img">
+                <div class="card-name"><h3>Yoga Training</h3></div>
+                <div class="overlay">
+                    <div class="text"><a href="#">See plans</a></div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <div class="container trainers">
+            <h2>Trainers</h2>
+            <div class="cards">
+                <div class="card weight-train">
+                    <img src="images/wttrain.jpg" alt="weight-train" class="grid-img" id="special">
+                    <div class="card-name">
+                        <h3>Rohtak Sharma</h3>
+                        <h5>( Weight Trainer)</h5>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com">
+                        <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    </div>
+                    </div>
+    
+                </div>
+                <div class="card cardio-train">
+                    <img src="images/cardiotrain.jpg" alt="cardio-train" class="grid-img">
+                    <div class="card-name">
+                        <h3>R.D. Shaw</h3>
+                        <h5>( Cardio Trainer )</h5>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com">
+                        <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="card yoga-train">
+                    <img src="images/yogatrain.jpg" alt="yoga-train" class="grid-img">
+                    <div class="card-name">
+                        <h3>Lisa Devon</h3>
+                        <h5>( Yoga Trainer )</h5>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com">
+                        <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <div class="container form-start">
+            <h2>Join Us now!</h2>
+            <form class="join-form">
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Email">
+                <input type="number" placeholder="Age">
+                <input type="password" placeholder="Password">
+                <div class="utility">
+                    <span><a href="#">Already a user?</a> </span>
+                    <span><a href="#">Forgot Password</a> </span>
+                </div>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+        <div class="container-fluid foter">
+            <div class="block1">
+                <h2>The Muscle Studio</h2>
+                <h6>204,Town Hall Street</h6>
+                <h6>United States</h6>
+            </div>
+            <div class="block2">
+                <h6><a href="about.html">About Us</a></h6>
+                <h6><a href="contact.html">Contact Us</a></h6>
+                <h6><a href="#">Privacy Policy</a></h6>
+            </div>
+            <div class="block3">
+                <h6>Copyright @2023 | All Rights Reserved</h6>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

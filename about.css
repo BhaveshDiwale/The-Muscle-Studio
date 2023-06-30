@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+body{
+  background-color: black;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  
+  .navbar{
+      max-width: 100%;
+      height: 50px;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px;
+      position: relative;
+  }
+  
+  .logo-wrap{
+      display: flex;
+      font-weight: 900;
+      font-size: 16px;
+  }
+
+  .logo-wrap a{
+    text-decoration: none;
+    color: white;
+}
+  
+  #closebtn{
+      text-align: end;
+      /* padding : 10px; */
+      width: 100%;
+  }
+  
+  #link-group-wrap{
+      display: none;
+      width: 94%;
+      background-color: black;
+      color: white;
+      text-align: center;
+      z-index: 1;
+      position: absolute;
+      height: 175px;
+      padding: 10px;
+  }
+
+  .link-group{
+    max-width: 100%;
+  }
+  
+  .link{
+      list-style: none;
+      padding: 10px 0;
+  }
+  
+  .link-group a{
+      text-decoration: none;
+      color: white;
+  }
+  
+  .link:hover{
+      background-color: darkred;
+      cursor: pointer;
+      
+  }
+
+  .mainbox{
+    background-color: black;
+  }
+
+  .headings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  h1{
+    margin-bottom: 10px;
+  }
+
+  .matter{
+    padding: 10px;
+    line-height: 1.6;
+  }
+
+  p,.matter h2,em{
+    margin-bottom: 10px;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width:768px) {
+    .wrap{
+      padding: 0 10px;
+    }
+    .navbar{
+      height: 60px;
+      width: 50%;
+  }
+
+  .menu,#closebtn{
+      display: none;
+  }
+  
+  .link{
+      display: inline;
+      color: white;
+      padding: 10px;
+  }
+
+  .link-group{
+    padding: 10px;
+  }
+
+
+  #link-group-wrap{
+      height: 60px;
+      z-index: 0;
+      display: flex;
+      position: relative;
+      justify-content: flex-end;
+  }
+
+  .wrap{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+  }
+
+  p,.matter h2,em{
+    width: 70%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  }
+
+  @media screen and (min-width:1024px) {
+    p,.matter h2,em{
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width:1440px) {
+    p,.matter h2,em{
+      width: 40%;
+      text-align: center;
+    }
+
+    .headings{
+      margin-top: 40px;
+    }
+  }
